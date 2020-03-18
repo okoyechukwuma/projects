@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css form</title>
+    <style>
+        *{
+            user-select: none;
+        }
+        .par{
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+        form{
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+        }
+        input[type=text]{
+            width: 130px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            font-size: 18px;
+            background-color: #fff;
+            background-image: url('search-bar.png');
+            background-size: 30px;
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            padding: 12px 20px 12px 60px;
+            transition: width .4s ease-in-out;
+        }
+        input[type=text]:focus{
+            width: 100%;
+        }
+        .header{
+            text-align: center;
+            text-transform: capitalize;
+            font-size: 24px;
+            color: #666;
+            font-weight: bold;
+        }
+        ul{
+            background: #333;
+            list-style-type: none;
+        }
+        li{
+            display: inline-block;
+            color: #fff;
+            font-size: 18px;
+            text-transform: capitalize; 
+            padding: 20px;
+            cursor: pointer;
+        }
+        li:hover{
+            background: #000;
+        }
+        .container{
+            display: flex;
+        }
+        .side{
+            text-align: justify;
+            width: 25%;
+            margin: 10px;
+        }
+        .side h1, .content h1{
+            text-transform: capitalize;
+        }
+        .content{
+            text-align: justify;
+            width: 50%;
+            margin: 10px;
+        }
+        footer{
+            background: #333;
+        }
+        footer p{
+            color: #fff;
+            font-size: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+        .dropbtn{
+            position: relative;
+        }
+        .drop-content{
+            display: none;
+            position: absolute;
+            min-width: 130px;
+            background: rgba(0, 0, 0,.7);
+            top: 60px;
+        }
+        .drop-content a{
+            display: block;
+            color: red;
+          
+            padding: 20px;
+        }
+        .drop-content a:hover{
+            background: rgba(256, 256, 256,.4);
+        }
+        .dropbtn:hover .drop-content{
+            display: block;
+        }
+        @media(max-width: 600px){
+            .container{
+                display: flex;
+                flex-direction: column;
+            }
+            .side, .content{
+                width: 100%;
+                margin-top: -20px;
+            }
+            .side h1, .content h1{
+                text-align: center;
+                text-transform: capitalize;
+            }
+        }
+    </style>
+</head>
+<body>
+    <p class="par">input with icon</p>
+    <form action="">
+        <input type="text" name="" id="" placeholder="search...">
+    </form>
+    <p class="header">header</p>
+    <ul>
+        <li onclick="document.location = '#'">home</li>
+        <li onclick="document.location = '#'">news</li>
+        <li onclick="document.location = '#'">about</li>
+        <li class="dropbtn" onclick="document.location = '#'">contact
+            <div class="drop-content">
+                <a>link1</a>
+                <a>link2</a>
+                <a>link3</a>
+            </div>
+            
+        </li>
+    </ul>
+    <div class="container">
+        <div class="side">
+            <h1>side</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi excepturi soluta natus similique rem tenetur blanditiis. Nobis, adipisci velit. Rem eius soluta ex veritatis voluptatibus totam id dolorem placeat sunt.</p>
+        </div>
+        <div class="content">
+            <h1>main-content</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, odio veritatis molestias eos et pariatur, minus veniam maiores nostrum quaerat consectetur totam repellendus blanditiis provident eveniet dolores, perferendis vero saepe.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, odio veritatis molestias eos et pariatur, minus veniam maiores nostrum quaerat consectetur totam repellendus blanditiis provident eveniet dolores, perferendis vero saepe.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, odio veritatis molestias eos et pariatur, minus veniam maiores nostrum quaerat consectetur totam repellendus blanditiis provident eveniet dolores, perferendis vero saepe.</p>
+        </div>
+        <div class="side">
+            <h1>side</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi excepturi soluta natus similique rem tenetur blanditiis. Nobis, adipisci velit. Rem eius soluta ex veritatis voluptatibus totam id dolorem placeat sunt.</p>
+        </div>
+    </div>
+    <footer>
+        <p>solar &copy;</p>
+    </footer>
+</body>
+</html>
