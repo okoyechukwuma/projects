@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Nav-Bar</title>
+    <style>
+        ul{
+            background: #eee;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+            text-transform: capitalize;
+            font-size: 18px;
+            color: #333;
+            display: block;
+            padding: 10px 16px;
+        }
+        a:hover:not(.active){
+            color: #fff;
+            background: #444;
+            transition: all .5s ease-in-out;
+            font-size: 24px;
+        }
+         .active{
+           background: green;
+           color: #ffff;
+       }
+     
+    </style>
+</head>
+<body>
+  <ul>
+       <li><a class="active" href="#">home</a></li>
+       <li><a href="#">news</a></li>
+       <li><a href="#">contact</a></li>
+       <li><a href="#">about</a></li>
+   </ul>
+  
+  
+</body>
+</html>
