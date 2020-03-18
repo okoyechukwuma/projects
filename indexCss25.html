@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css WebPage</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            user-select: none;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #ddd;
+        }
+        header{
+            padding: 10px;
+        }
+        header h1{
+            text-align: center;
+            font-size: 40px;
+            margin: 5px;
+        }
+        header p{
+            text-align: center;
+            font-size: 14px;
+        }
+        ul{
+            background: #333;
+        }
+        li{
+            padding: 20px;
+            color: #fff;
+            display: inline-block;
+            cursor: pointer;
+        }
+        li:last-child{
+           float: right;
+        }
+        li:hover{
+            background: #000;
+        }
+        .container{
+            display: flex;
+            padding: 10px;
+            justify-content: space-between;
+        }
+        .left{
+            width: 74%;
+        }
+        .first-con{
+            background: #fff;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 8px 12px 0 rgba(0, 0, 0, 0.2);
+            text-align: justify;
+        }
+        .image{
+            width: 94%;
+            height: 150px;
+            background: #666;
+            padding: 20px;
+        }
+        .right{
+            width: 25%;
+        }
+        .about{
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 8px 12px 0 rgba(0, 0, 0, 0.2);
+        }
+        .image1, .image2, .image3, .image4{
+            width: 88%;
+            height: 50px;
+            background: #666;
+            padding: 20px 10px 20px 20px;
+            border-radius: 2px;
+        }
+        .image2, .image3, .image4{
+            border-bottom: .5px ridge;
+        }
+        .post{
+            margin-top: 20px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 8px 12px 0 rgba(0, 0, 0, 0.2);
+        }
+        .follow{
+            margin-top: 20px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 8px 12px 0 rgba(0, 0, 0, 0.2);
+        }
+        footer{
+            background: #333;
+        }
+        footer p{
+            color: #fff;
+            font-size: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+        @media(max-width: 700px){
+            .container{
+                display: flex;
+                flex-direction: column;
+            }
+            .left, .right{
+                width: 100%;
+            }
+            .first-con{
+                margin-right: 0;
+            }
+            .image{
+                width: 92%;
+            }
+            .about, .post, .follow{
+                margin-left: 5px;
+            } 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Web Page</h1>
+        <p>Resize to see the difference</p>
+    </header>
+    <ul>
+        <li>link</li>
+        <li>link</li>
+        <li>link</li>
+        <li>link</li>
+    </ul>
+    <div class="container">
+        <div class="left">
+            <div class="first-con">
+                <h1>TITLE HEADING</h1>
+                <P>Title description, March 17, 2020</P>
+                <div class="image">
+                    image
+                </div>
+                <h4>Some text...</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam deserunt id, ducimus in magni odio nesciunt obcaecati nam, facere totam voluptatum quasi quos ipsa, consectetur quidem sint. Eos, architecto dolore! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati nam architecto ipsam, laboriosam officia minima consectetur eligendi itaque rerum corporis excepturi officiis? Qui optio possimus aperiam porro nisi quidem blanditiis?</p>
+            </div>
+            <div class="first-con">
+                <h1>TITLE HEADING</h1>
+                <P>Title description, March 17, 2020</P>
+                <div class="image">
+                    image
+                </div>
+                <h4>Some text...</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam deserunt id, ducimus in magni odio nesciunt obcaecati nam, facere totam voluptatum quasi quos ipsa, consectetur quidem sint. Eos, architecto dolore! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati nam architecto ipsam, laboriosam officia minima consectetur eligendi itaque rerum corporis excepturi officiis? Qui optio possimus aperiam porro nisi quidem blanditiis?</p>
+            </div>
+        </div>
+        <div class="right">
+            <div class="about">
+                <h2>About Me</h2>
+                <div class="image1">
+                    image
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores inventore molestias dolores, nemo veniam quisquam aliquam modi fugiat quidem dolore dicta accusamus obcaecati error, porro maxime alias? Consequatur autem porro nisi. Quis odio obcaecati voluptatibus officiis ut dolores, facilis vel aliquid repellendus vero et recusandae. Fugit fugiat corrupti repudiandae</p>
+            </div>
+            <div class="post">
+                <h2>Popular post</h2>
+                <div class="image2">
+                    image
+                </div>
+                <div class="image3">
+                   image 
+                </div>
+                <div class="image4">
+                   image 
+                </div>
+            </div>
+            <div class="follow">
+                <h2>follow me</h2>
+                <p>some text....</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>solar &copy; 2020</p>
+    </footer>
+</body>
+</html>
